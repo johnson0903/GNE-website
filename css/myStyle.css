@@ -1,0 +1,12 @@
+body{
+  height: 1000px;
+}
+.navbar{
+
+}
+.navbar-brand{
+  padding: 0px;
+}
+.navbar-brand img{
+  height: 50px;
+}
