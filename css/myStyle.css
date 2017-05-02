@@ -10,3 +10,11 @@ body{
 .navbar-brand img{
   height: 50px;
 }
+
+.col-md-1{
+  background-color: rgb(106, 156, 244);
+}
+
+.col-md-4{
+  background-color: rgb(154, 236, 197);
+}
