@@ -1,0 +1,31 @@
+.navbar-brand {
+  padding: 0px; }
+
+.navbar-brand img {
+  height: 50px; }
+
+.col-md-1 {
+  background-color: #6a9cf4; }
+
+.col-md-4 {
+  background-color: #9aecc5; }
+
+.navbar-nav li {
+  padding: 0px, 20px, 0px, 20px; }
+  .navbar-nav li:hover {
+    background-color: rgba(222, 226, 191, 0.3); }
+  .navbar-nav li > a {
+    color: #b7db4f !important; }
+
+.navbar-center {
+  display: inline-block;
+  float: none;
+  vertical-align: top; }
+
+.navbar-collapse-center {
+  text-align: center; }
+
+.dropdown-menu div {
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */
