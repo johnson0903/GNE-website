@@ -72,6 +72,10 @@ footer {
     margin: 50px 0;
 }
 
+footer p{
+  text-align: center;
+}
+
 /* Responsive Styles */
 
 @media(max-width:991px) {
