@@ -29,10 +29,10 @@
 
 </head>
 
-<body>
+<body data-target=".navbar" data-spy="scroll">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top " role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -51,37 +51,12 @@
                     <li>
                         <a href="about.html">About</a>
                     </li>
-                    <li>
-                        <a href="services.html">Services</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
+
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">服務項目 <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="portfolio-1-col.html">1 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-2-col.html">2 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-3-col.html">3 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-4-col.html">4 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-item.html">Single Portfolio Item</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="blog-home-1.html">Blog Home 1</a>
+                                <a href="blog-home-1.html">收購庫存電子元件流程</a>
                             </li>
                             <li>
                                 <a href="blog-home-2.html">Blog Home 2</a>
@@ -91,6 +66,10 @@
                             </li>
                         </ul>
                     </li>
+                    <li>
+                        <a href="#section-FAQ">FAQ</a>
+                    </li>
+
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
                         <ul class="dropdown-menu">
@@ -253,8 +232,8 @@
         </div>
         <!-- /.row -->
 
-        <!-- Features Section -->
-        <div class="row">
+        <!-- FAQ Section -->
+        <div class="row " id="section-FAQ">
             <div class="col-lg-12">
                 <h2 class="page-header">Modern Business Features</h2>
             </div>
@@ -306,6 +285,9 @@
             </div>
         </footer>
 
+        <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="返回頂部" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+
+
     </div>
     <!-- /.container -->
 
@@ -318,8 +300,29 @@
     <!-- Script to Activate the Carousel -->
     <script>
     $('.carousel').carousel({
-        interval: 2000 //changes the speed
-    })
+        interval: 2500 //changes the speed
+    });
+
+    $(document).ready(function(){
+     $(window).scroll(function () {
+            if ($(this).scrollTop() > 300) {
+                $('#back-to-top').fadeIn();
+            } else {
+                $('#back-to-top').fadeOut();
+            }
+        });
+        // scroll body to 0px on click
+        $('#back-to-top').click(function () {
+            $('#back-to-top').tooltip('hide');
+            $('body,html').animate({
+                scrollTop: 0
+            }, 1000);
+            return false;
+        });
+
+        $('#back-to-top').tooltip('show');
+
+    });
     </script>
 
 </body>

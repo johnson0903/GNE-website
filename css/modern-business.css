@@ -1,19 +1,22 @@
 /* Global Styles */
 
-html,
-body {
+html, body {
     height: 100%;
 }
 
 body {
-    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    padding-top: 50px;
+    /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
-.navbar-brand{
-  padding: 5px 5px;
+
+.navbar-brand {
+    padding: 5px 5px;
 }
-.navbar-default{
-  background-color: white;
+
+.navbar-default {
+    background-color: white;
 }
+
 .img-portfolio {
     margin-bottom: 30px;
 }
@@ -22,15 +25,14 @@ body {
     opacity: 0.8;
 }
 
+
 /* Home Page Carousel */
 
 header.carousel {
     height: 50%;
 }
 
-header.carousel .item,
-header.carousel .item.active,
-header.carousel .carousel-inner {
+header.carousel .item, header.carousel .item.active, header.carousel .carousel-inner {
     height: 100%;
 }
 
@@ -41,11 +43,13 @@ header.carousel .fill {
     background-size: cover;
 }
 
+
 /* 404 Page Styles */
 
 .error-404 {
     font-size: 100px;
 }
+
 
 /* Pricing Page Styles */
 
@@ -66,21 +70,38 @@ header.carousel .fill {
     font-style: italic;
 }
 
+
 /* Footer Styles */
 
 footer {
     margin: 50px 0;
 }
 
-footer p{
-  text-align: center;
+footer p {
+    text-align: center;
 }
+
+.back-to-top {
+    padding: 10px 12px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.02)
+}
+
+.back-to-top:hover {
+    background-color: rgba(0, 0, 0, 0.55);
+    border-color: rgba(255, 255, 255, 0.02)
+}
+
 
 /* Responsive Styles */
 
 @media(max-width:991px) {
-    .customer-img,
-    .img-related {
+    .customer-img, .img-related {
         margin-bottom: 30px;
     }
 }
@@ -89,7 +110,6 @@ footer p{
     .img-portfolio {
         margin-bottom: 15px;
     }
-
     header.carousel .carousel {
         height: 70%;
     }
