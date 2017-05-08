@@ -1,5 +1,8 @@
 /* Global Styles */
-
+@import url(http//fonts.googleapis.com/earlyaccess/notosanstc.css);
+*{
+  font-family: 'Noto Sans TC', sans-serif;
+}
 html, body {
     height: 100%;
 }
@@ -7,6 +10,19 @@ html, body {
 body {
     padding-top: 50px;
     /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+figcaption {
+  margin-bottom: 10px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover{
+  font-weight: bold;
+  background-color: rgba(185, 207, 198, 0.58);
 }
 
 .navbar-brand {
@@ -18,7 +34,7 @@ body {
 }
 
 .img-portfolio {
-    margin-bottom: 30px;
+    margin-bottom: 5px;
 }
 
 .img-hover:hover {
