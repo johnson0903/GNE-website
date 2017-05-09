@@ -77,7 +77,7 @@
     <!-- /.container -->
   </nav>
 
-  <!-- Modal -->
+  <!-- 聯絡我們-Modal -->
   <div class="modal fade" id="modal-contact" role="dialog">
     <div class="modal-dialog">
 
@@ -88,9 +88,33 @@
           <h4 class="modal-title">聯絡方式</h4>
         </div>
         <div class="modal-body">
-          <img class="contact-image" src="image/line.png" alt="line.png"><span>alex5300</span>
-
+          <div class="contact-info">
+            <img class="contact-image" src="image/skype.png" alt="skype.png">
+            <p>alex5300</p>
+          </div>
+          <div class="contact-info">
+            <img class="contact-image" src="image/line.png" alt="line.png">
+            <p>alex5300</p>
+          </div>
+          <div class="contact-info">
+            <img class="contact-image" src="image/wechat.png" alt="wechat.png">
+            <p>alex5300</p>
+          </div>
         </div>
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <p class="help-block">Example block-level help text here.</p>
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
@@ -397,11 +421,11 @@
   <!-- Footer -->
   <footer>
     <div class="container-fluid">
-        <p>盛通電子股份有限公司</p>
-        <p>台北市大安區忠孝東路4段122之11號12F</p>
-        <p>+886-2-2740-5300</p>
-        <p>收購庫存電子元件 收購IC 收購主被動元件</p>
-        <p>Copyright &copy; 2017 GlobalNet. All right reserved.</p>
+      <p>盛通電子股份有限公司</p>
+      <p>台北市大安區忠孝東路4段122之11號12F</p>
+      <p>+886-2-2740-5300</p>
+      <p>收購庫存電子元件 收購IC 收購主被動元件</p>
+      <p>Copyright &copy; 2017 GlobalNet. All right reserved.</p>
 
     </div>
   </footer>
@@ -418,19 +442,19 @@
     $('.carousel').carousel({
       interval: 2500 //changes the speed
     });
-    $(document).ready(function(){
-      $(window).scroll(function(){
-        if($(this).scrollTop()>300){
+    $(document).ready(function() {
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > 300) {
           $('#back-to-top').fadeIn();
-        }else{
+        } else {
           $('#back-to-top').fadeOut();
         }
       });
 
       //scroll body to top
-      $('#back-to-top').click(function(){
+      $('#back-to-top').click(function() {
         $('body,html').animate({
-          scrollTop:0
+          scrollTop: 0
         }, 1000);
         return false;
       });

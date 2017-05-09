@@ -48,10 +48,22 @@ figcaption {
 .img-hover:hover {
   opacity: 0.8;
 }
-
+.contact-info{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+.contact-info p{
+  margin-bottom: 0;
+}
 .contact-image {
-  width: 35px;
-  height: 35px;
+  margin-right: 10px;
+  width: 45px;
+  height: 45px;
+}
+.form-group{
+  padding: 10px 30px;
 }
 
 
