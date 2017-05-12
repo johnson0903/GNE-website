@@ -104,6 +104,7 @@ figcaption {
 /* Home Page Carousel */
 
 header.carousel {
+  margin-top: 20px;
   height: 50%;
 }
 
