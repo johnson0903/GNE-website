@@ -26,9 +26,78 @@
 </head>
 
 <body data-target=".navbar" data-spy="scroll" data-offset="20">
+  <!-- 聯絡我們-Modal -->
+  <div class="modal fade" id="modal-contact" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">聯絡方式</h4>
+        </div>
+        <div class="modal-body">
+          <div class="contact-info">
+            <img class="contact-image" src="image/skype.png" alt="skype.png">
+            <p>alex5300</p>
+          </div>
+          <div class="contact-info">
+            <img class="contact-image" src="image/wechat.png" alt="wechat.png">
+            <p>alex5300</p>
+          </div>
+          <div class="contact-info">
+            <img class="contact-image" src="image/line.png" alt="line.png">
+            <p>dadfda</p>
+          </div>
+        </div>
+        <form>
+          <div class="form-group">
+            <label for="contactPerson">聯絡人姓名</label>
+            <input type="text" class="form-control" id="contactPerson">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">電子郵件信箱</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="contact@gne.com">
+          </div>
+          <div class="form-group">
+            <label for="phoneNumber">聯絡電話</label>
+            <input type="tel" class="form-control" id="phoneNumber" placeholder="0987654321">
+          </div>
+          <div class="form-group">
+            <p class="help-block">Example block-level help text here.</p>
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Contact Nav -->
+  <div class="contact-nav">
+    <div class="container">
+      <div class="flex-row">
+        <div class="flex-row">
+          <i class="fa fa-phone white-icon" aria-hidden="true"></i>
+          <p>+886-2-2740-5300</p>
+        </div>
+        <div class="flex-row">
+          <i class="fa fa-envelope-o white-icon" aria-hidden="true"></i>
+          <p>oem@gneic.com</p>
+        </div>
+      </div>
+      <div class="contact-nav-right">
+        <a href="#"><i class="fa fa-weixin white-icon fa-lg" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-skype white-icon fa-lg" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </div>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-default navbar-fixed-top " role="navigation">
+  <nav class="navbar navbar-default navbar-static-top " role="navigation">
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -76,52 +145,6 @@
     </div>
     <!-- /.container -->
   </nav>
-
-  <!-- 聯絡我們-Modal -->
-  <div class="modal fade" id="modal-contact" role="dialog">
-    <div class="modal-dialog">
-
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">聯絡方式</h4>
-        </div>
-        <div class="modal-body">
-          <div class="contact-info">
-            <img class="contact-image" src="image/skype.png" alt="skype.png">
-            <p>alex5300</p>
-          </div>
-          <div class="contact-info">
-            <img class="contact-image" src="image/line.png" alt="line.png">
-            <p>alex5300</p>
-          </div>
-          <div class="contact-info">
-            <img class="contact-image" src="image/wechat.png" alt="wechat.png">
-            <p>alex5300</p>
-          </div>
-        </div>
-        <form>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-          </div>
-          <div class="form-group">
-            <p class="help-block">Example block-level help text here.</p>
-          </div>
-          <button type="submit" class="btn btn-default">Submit</button>
-        </form>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-
-    </div>
-  </div>
 
   <!-- Header Carousel -->
   <header id="myCarousel" class="carousel slide">

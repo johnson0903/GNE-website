@@ -1,8 +1,9 @@
 /* Global Styles */
 
-@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url('http://fonts.googleapis.com/earlyaccess/notosanstc.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 * {
-  font-family: '微軟正黑體';
+  font-family: '微軟正黑體', 'Roboto';
 }
 
 h1, h2 {
@@ -14,7 +15,6 @@ html, body {
 }
 
 body {
-  padding-top: 50px;
   background-color: rgba(240, 240, 240, 0.17);
   /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
@@ -25,6 +25,52 @@ figcaption {
   text-align: center;
 }
 
+.modal-body{
+  width: 60%;
+  margin: 0px auto;
+}
+
+/* 聯絡資訊 */
+.white-icon{
+  color: rgb(181, 181, 181);
+}
+.white-icon:hover{
+  color: white;
+}
+
+.contact-nav{
+  background-color: #333333;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+.contact-nav p {
+  color: white;
+  margin: 0 10px;
+}
+.contact-nav>.container{
+  display: flex;
+  justify-content: space-between;
+}
+.contact-nav>.container:after{
+  content: initial;
+}
+.contact-nav>.container:before{
+  content: initial;
+}
+.flex-row{
+  display: flex;
+  align-items: center;
+}
+
+.contact-nav-right a{
+  padding: 10px 10px;
+}
+
+/* navbar style */
+.navbar{
+  margin-bottom: 0;
+}
 .navbar-nav>li>a {
   font-size: 1.1em;
 }
@@ -48,21 +94,21 @@ figcaption {
 .img-hover:hover {
   opacity: 0.8;
 }
+
 .contact-info{
   display: flex;
-  justify-content: center;
-  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
+  border-bottom: 1px solid rgb(233, 233, 233);
 }
 .contact-info p{
   margin-bottom: 0;
 }
 .contact-image {
-  margin-right: 10px;
   width: 45px;
   height: 45px;
 }
-.form-group{
+.modal-content form{
   padding: 10px 30px;
 }
 
@@ -104,7 +150,6 @@ figcaption {
 /* Home Page Carousel */
 
 header.carousel {
-  margin-top: 20px;
   height: 50%;
 }
 
