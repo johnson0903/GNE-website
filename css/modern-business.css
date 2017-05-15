@@ -40,7 +40,7 @@ figcaption {
 
 .contact-nav{
   background-color: #333333;
-  height: 40px;
+  height: 30px;
   display: flex;
   align-items: center;
 }
@@ -63,13 +63,14 @@ figcaption {
   align-items: center;
 }
 
-.contact-nav-right a{
-  padding: 10px 10px;
+.contact-nav-right i{
+  padding: 5px 8px;
 }
 
 /* navbar style */
 .navbar{
   margin-bottom: 0;
+  box-shadow: 0px 0px 20px 10px #333333;
 }
 .navbar-nav>li>a {
   font-size: 1.1em;
@@ -112,7 +113,9 @@ figcaption {
   padding: 10px 30px;
 }
 
-
+#myCarousel{
+  margin-top: 90px;
+}
 /*客製化5欄grid*/
 
 .col-xs-5ths, .col-sm-5ths, .col-md-5ths, .col-lg-5ths {
