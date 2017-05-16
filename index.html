@@ -24,7 +24,7 @@
 
 </head>
 
-<body data-target=".navbar" data-spy="scroll" data-offset="60">
+<body data-target=".navbar" data-spy="scroll" data-offset="70">
   <!-- 聯絡我們-Modal -->
   <div class="modal fade" id="modal-contact" role="dialog">
     <div class="modal-dialog">
@@ -61,9 +61,10 @@
             <label for="phoneNumber">聯絡電話</label>
             <input type="tel" class="form-control" id="phoneNumber" placeholder="0987654321">
           </div>
-          <!-- <div class="form-group">
-            <p class="help-block">Example block-level help text here.</p>
-          </div> -->
+          <div class="form-group">
+            <div class="help-block"><span><i class="fa fa-phone" aria-hidden="true"></i></span>+886-2-2740-5300</div>
+            <div class="help-block"><span><i class="fa fa-envelope" aria-hidden="true"></i></span><a href="mailto:oem@gneic.com">oem@gneic.com</a></div>
+          </div>
           <input type="file" name="" value="">
           <button type="submit" class="btn btn-default">Submit</button>
         </form>
@@ -74,6 +75,21 @@
 
     </div>
   </div>
+  <!-- Wechat-Modal -->
+  <div class="modal fade" id="modal-wechat" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">QR Code</h4>
+        </div>
+        <div class="modal-body">
+          <img id="wechat-QRcode" class="img-responsive" src="image/wechat-QRcode.jpg" alt="wechat-QRcode.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Navigation -->
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -82,17 +98,17 @@
       <div class="container">
         <div class="flex-row">
           <div class="flex-row">
-            <i class="fa fa-phone white-icon" aria-hidden="true"></i>
-            <h5>+886-2-2740-5300</h5>
+            <i class="fa fa-phone fa-2x white-icon" aria-hidden="true"></i>
+            <h4>+886-2-2740-5300</h4>
           </div>
           <div class="flex-row">
-            <i class="fa fa-envelope-o white-icon" aria-hidden="true"></i>
-            <h5>oem@gneic.com</h5>
+            <i class="fa fa-envelope-o fa-2x white-icon" aria-hidden="true"></i>
+            <a href="mailto:oem@gneic.com"><h4>oem@gneic.com</h4></a>
           </div>
         </div>
         <div class="contact-nav-right">
-          <i class="fa fa-weixin white-icon fa-lg" aria-hidden="true" title="johnson"></i>
-          <i class="fa fa-skype white-icon fa-lg" aria-hidden="true"></i>
+          <a href="#" class="dropdown-toggle" data-toggle="modal" data-target="#modal-wechat"><i class="fa fa-weixin white-icon fa-2x" aria-hidden="true" title="johnson"></i></a>
+          <i class="fa fa-skype white-icon fa-2x" aria-hidden="true"></i>
         </div>
       </div>
     </div>
@@ -112,10 +128,10 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
           <li>
-            <a class="page-scroll" href="#section-procedure">收購庫存電子元件流程</a>
+            <a class="page-scroll" href="#section-OEM_about">庫存呆滯料管理部門簡介</a>
           </li>
           <li>
-            <a class="page-scroll" href="#section-OEM_about">庫存呆滯料管理部門簡介</a>
+            <a class="page-scroll" href="#section-procedure">收購庫存電子元件流程</a>
           </li>
           <li>
             <a class="page-scroll" href="#section-news">最新消息</a>
@@ -180,9 +196,7 @@
     <!-- Marketing Icons Section -->
     <div class="row">
       <div class="col-lg-12">
-        <h2 class="page-header">
-                    為何大家都選擇盛通收購庫存電子元件
-                </h2>
+        <h2 class="page-header">為何大家都選擇盛通收購庫存電子元件</h2>
       </div>
       <div class="col-md-5ths col-sm-6">
         <div class="panel panel-primary">
@@ -190,8 +204,8 @@
             <h4><span class="glyphicon glyphicon-ok"></span> 專業</h4>
           </div>
           <div class="panel-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-            <a href="#" class="btn btn-default">Learn More</a>
+            <p>我們主要成員，收購庫存經驗都已超過10年，能提供專業分析與市場行情資訊。</p>
+            <!-- <a href="#" class="btn btn-default">Learn More</a> -->
           </div>
         </div>
       </div>
@@ -201,8 +215,8 @@
             <h4><span class="glyphicon glyphicon-flash"></span> 快速</h4>
           </div>
           <div class="panel-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-            <a href="#" class="btn btn-default">Learn More</a>
+            <p>我們了解庫存處理對於採購並非核心工作，我們能在48小時內提供您報價，並以標準SOP快速完成交易。</p>
+            <!-- <a href="#" class="btn btn-default">Learn More</a> -->
           </div>
         </div>
       </div>
@@ -212,8 +226,8 @@
             <h4><span class="glyphicon glyphicon-heart"></span> 安心</h4>
           </div>
           <div class="panel-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-            <a href="#" class="btn btn-default">Learn More</a>
+            <p>我們一律採用現金付或電匯方式，在交貨前完成付款動作。即使第一次交易客戶，都不用擔心收款風顯。</p>
+            <!-- <a href="#" class="btn btn-default">Learn More</a> -->
           </div>
         </div>
       </div>
@@ -223,8 +237,8 @@
             <h4><span class="glyphicon glyphicon-cog"></span> 彈性</h4>
           </div>
           <div class="panel-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-            <a href="#" class="btn btn-default">Learn More</a>
+            <p>不論您想用整批轉售或是清單項目寄售交易，盛通都可以配合。</p>
+            <!-- <a href="#" class="btn btn-default">Learn More</a> -->
           </div>
         </div>
       </div>
@@ -234,8 +248,8 @@
             <h4><span class="glyphicon glyphicon-refresh"></span> 無限</h4>
           </div>
           <div class="panel-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-            <a href="#" class="btn btn-default">Learn More</a>
+            <p>我們收夠地區不限於兩按三地，韓國/日本/歐美您指定地區，我們都可以配合。</p>
+            <!-- <a href="#" class="btn btn-default">Learn More</a> -->
           </div>
         </div>
       </div>
@@ -261,25 +275,25 @@
       </div>
       <div class="col-md-3 col-sm-4">
         <figure>
-          <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/500x450" alt="">
+          <img class="img-responsive img-portfolio img-hover" src="image/SSD.jpg" alt="SSD.jpg">
           <figcaption>SSD/HD</figcaption>
         </figure>
       </div>
       <div class="col-md-3 col-sm-4">
         <figure>
-          <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/500x450" alt="">
+          <img class="img-responsive img-portfolio img-hover" src="image/RAM Module.jpg" alt="RAM Module.png">
           <figcaption>RAM Module</figcaption>
         </figure>
       </div>
       <div class="col-md-3 col-sm-4">
         <figure>
-          <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/500x450" alt="">
+          <img class="img-responsive img-portfolio img-hover" src="image/flash.jpg" alt="flash.jpg">
           <figcaption>Flash</figcaption>
         </figure>
       </div>
       <div class="col-md-3 col-sm-4">
         <figure>
-          <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/500x450" alt="">
+          <img class="img-responsive img-portfolio img-hover" src="image/二極管.jpg" alt="二極管.jpg">
           <figcaption>二三極管</figcaption>
         </figure>
       </div>
@@ -310,16 +324,6 @@
     </div>
     <!-- /.row -->
 
-    <div class="row " id="section-procedure">
-      <div class="col-lg-12">
-        <h2 class="page-header">收購庫存電子元件流程</h2>
-      </div>
-      <div class="col-md-12">
-        <img class="img-responsive" src="image/流程.png" alt="流程.png">
-      </div>
-    </div>
-    <!-- /.row -->
-
     <div class="row " id="section-OEM_about">
       <div class="col-lg-12">
         <h2 class="page-header">盛通電子庫存呆滯料管理部門簡介</h2>
@@ -331,6 +335,16 @@
         <p>
           將電子元件直接報廢或許是個選項，但如能在報廢前幫每個零件找尋再利用機會，就可以對減少地球資源消耗多盡一份心力，如果貴公司有庫存電子元件轉售需求，請將貴公司電子元件庫存清單email至 <span id="email">oes@gneic.com</span>，我們會盡全力用合理價格、彈性的交易方式收購貴公司庫存。
         </p>
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <div class="row " id="section-procedure">
+      <div class="col-lg-12">
+        <h2 class="page-header">收購庫存電子元件流程</h2>
+      </div>
+      <div class="col-md-12">
+        <img class="img-responsive" src="image/流程.png" alt="流程.png">
       </div>
     </div>
     <!-- /.row -->
@@ -373,7 +387,7 @@
           </div>
           <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
             <div class="panel-body">
-              *原廠料號、*品牌、*數量、Date Code (*為必要欄位)
+              <span class="star">*</span>原廠料號、<span class="star">*</span>品牌、<span class="star">*</span>數量、Date Code (<span class="star">*</span>為必要欄位)
             </div>
           </div>
         </div>
