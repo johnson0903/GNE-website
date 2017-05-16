@@ -10,6 +10,17 @@ h1, h2 {
   font-family: 'Noto Sans TC', '微軟正黑體';
 }
 
+p{
+  font-size: 16px;
+  line-height: 30px;
+  text-indent: 2em;
+}
+
+#email{
+  color: rgb(58, 154, 254);
+  font-weight: bold;
+}
+
 html, body {
   height: 100%;
 }
@@ -44,7 +55,7 @@ figcaption {
   display: flex;
   align-items: center;
 }
-.contact-nav p {
+.contact-nav h5 {
   color: white;
   margin: 0 10px;
 }
@@ -102,7 +113,7 @@ figcaption {
   align-items: center;
   border-bottom: 1px solid rgb(233, 233, 233);
 }
-.contact-info p{
+.contact-info h5{
   margin-bottom: 0;
 }
 .contact-image {
@@ -203,8 +214,7 @@ footer {
   background-color: rgba(142, 123, 68, 0.66);
 }
 
-footer p {
-  font-size: 1.2em;
+footer h5 {
   text-align: center;
   color: white;
 }
