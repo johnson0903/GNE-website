@@ -19,6 +19,10 @@ p{
   line-height: 30px;
   text-indent: 2em;
 }
+.container-fluid{
+  padding-left: 0;
+  padding-right: 0;
+}
 .panel-body p {
   text-indent: 0;
 }
@@ -52,13 +56,36 @@ figcaption {
 #wechat-QRcode{
   border: 5px double rgb(198, 198, 198);
 }
-
-/* 聯絡資訊 */
-.white-icon{
-  color: rgb(181, 181, 181);
+.nav-title{
+  height: 70px;
 }
-.white-icon:hover{
-  color: white;
+/* 聯絡資訊 */
+.black-icon{
+  color: rgb(69, 69, 69);
+}
+.navbar {
+  min-height:70px !important;
+}
+.navbar-brand {
+    padding-top:4px !important;
+    padding-bottom:3px !important;
+    height: 70px;
+}
+.navbar-header{
+  padding: 5px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#bs-example-navbar-collapse-1{
+  background-color: #F79B00;
+}
+@media (min-width: 768px) {
+  #bs-example-navbar-collapse-1 ul{
+    float: none;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .contact-nav{
@@ -80,6 +107,11 @@ figcaption {
 }
 .contact-nav>.container:before{
   content: initial;
+}
+@media (max-width: 767px) {
+  #contact-icon{
+    display: none !important;
+  }
 }
 .flex-row{
   display: flex;
@@ -103,20 +135,26 @@ figcaption {
 /* navbar style */
 .navbar{
   margin-bottom: 0;
-  box-shadow: 0px 0px 20px 10px #333333;
+  border-bottom: 0px;
 }
 .navbar-nav>li>a {
-  font-size: 1.1em;
+  font-size: 16px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white !important;
 }
-.navbar-nav>.active{
-  border-bottom: 4px solid rgb(15, 136, 34);
+.navbar-nav .active{
+  background-color: rgb(59, 59, 59);
+}
+.navbar-nav li:hover{
+  background-color:rgb(125, 125, 125);
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
   background-color: rgba(185, 207, 198, 0.3);
 }
-
 .navbar-brand {
   padding: 5px 5px;
+  margin-left: 0px !important;
 }
 
 .navbar-default {
@@ -152,10 +190,18 @@ figcaption {
 .modal-content form{
   padding: 10px 30px;
 }
-
-#myCarousel{
-  margin-top: 100px;
+@media (min-width: 500px) {
+  #myCarousel{
+    margin-top: 80px;
+  }
 }
+@media (min-width: 768px) {
+  #myCarousel{
+    margin-top: 140px;
+  }
+}
+
+
 /*客製化5欄grid*/
 
 .col-xs-5ths, .col-sm-5ths, .col-md-5ths, .col-lg-5ths {
@@ -248,7 +294,7 @@ header.carousel .fill {
 footer {
   margin-top: 30px;
   padding: 10px 0;
-  background-color: rgba(142, 123, 68, 0.66);
+  background-color: #555;
 }
 
 footer h5 {

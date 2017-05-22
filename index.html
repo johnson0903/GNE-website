@@ -24,7 +24,7 @@
 
 </head>
 
-<body data-target=".navbar" data-spy="scroll" data-offset="70">
+<body data-target=".navbar" data-spy="scroll" data-offset="105">
   <!-- 聯絡我們-Modal -->
   <div class="modal fade" id="modal-contact" role="dialog">
     <div class="modal-dialog">
@@ -35,25 +35,6 @@
           <h4 class="modal-title">聯絡方式 : ”如有庫存需要轉售報價，請使用下列表單將庫存清單發送給我們，謝謝。”</h4>
         </div>
         <div class="modal-body">
-
-        </div>
-        <form>
-          <div class="form-group">
-            <label for="contactPerson">聯絡人姓名</label>
-            <input type="text" class="form-control" id="contactPerson">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">電子郵件信箱</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="ex : contact@gne.com">
-          </div>
-          <div class="form-group">
-            <label for="phoneNumber">聯絡電話</label>
-            <input type="tel" class="form-control" id="phoneNumber" placeholder="ex : 0987654321">
-          </div>
-          <div class="form-group">
-            <div class="help-block"><span><i class="fa fa-phone" aria-hidden="true"></i></span>+886-2-2740-5300 ext : 300 Alex</div>
-            <div class="help-block"><span><i class="fa fa-envelope" aria-hidden="true"></i></span><a href="mailto:oes@gneic.com">oes@gneic.com</a></div>
-          </div>
           <div class="form-group" id="contact-fom-group">
             <div class="contact-info">
               <img class="contact-image" src="image/skype.png" alt="skype.png">
@@ -68,9 +49,7 @@
               <h5>alex5300</h5>
             </div>
           </div>
-          <input type="file" name="" value="">
-          <button type="submit" class="btn btn-default">Submit</button>
-        </form>
+        </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
@@ -94,12 +73,68 @@
     </div>
   </div>
 
+
   <!-- Navigation -->
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <!-- Contact Nav -->
-    <div class="contact-nav">
-      <div class="container">
+
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a href="index.html"><img class="navbar-brand" src="image/GNE-logo2.jpg" alt="GNE-logo2.jpg"></a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-right" id="contact-icon">
         <div class="flex-row">
+          <i class="fa fa-phone fa-lg white-icon" aria-hidden="true"></i>
+          <h5>+886-2-2740-5300 ext：300 Alex</h5>
+        </div>
+        <!-- <a href="#" class="dropdown-toggle" data-toggle="modal" data-target="#modal-wechat"><i class="fa fa-weixin fa-2x black-icon" aria-hidden="true"></i></a> -->
+        <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
+        <div id="SkypeButton_Call_globalnet-alex_1">
+          <script type="text/javascript">
+            Skype.ui({
+              "name": "chat",
+              "element": "SkypeButton_Call_globalnet-alex_1",
+              "participants": ["globalnet-alex"],
+              "imageSize": 24
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li>
+          <a class="page-scroll" href="#section-OEM_about">庫存呆滯料管理部門簡介</a>
+        </li>
+        <li>
+          <a class="page-scroll" href="#section-procedure">收購庫存電子元件流程</a>
+        </li>
+        <li>
+          <a class="page-scroll" href="#section-news">最新消息</a>
+        </li>
+        <li>
+          <a class="page-scroll" href="#section-FAQ">常見問題</a>
+        </li>
+
+        <li>
+          <a href="#" class="dropdown-toggle" data-toggle="modal" data-target="#modal-contact">聯絡我們</a>
+        </li>
+      </ul>
+    </div>
+    <!-- /.container -->
+
+    <!-- Contact Nav -->
+
+    <!-- /.navbar-collapse -->
+    <!-- <div class="flex-row">
           <div class="flex-row">
             <i class="fa fa-phone fa-2x white-icon" aria-hidden="true"></i>
             <h4>+886-2-2740-5300 ext:300 Alex</h4>
@@ -108,61 +143,7 @@
             <i class="fa fa-envelope-o fa-2x white-icon" aria-hidden="true"></i>
             <a href="mailto:oem@gneic.com"><h4>oes@gneic.com</h4></a>
           </div>
-        </div>
-        <div class="contact-nav-right" id="contact-icon">
-          <a href="#" class="dropdown-toggle" data-toggle="modal" data-target="#modal-wechat"><i class="fa fa-weixin white-icon" aria-hidden="true" title="wechat"></i></a>
-          <!-- <i class="fa fa-skype white-icon fa-2x" aria-hidden="true"></i> -->
-          <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
-          <div id="SkypeButton_Call_globalnet-alex_1">
-            <script type="text/javascript">
-              Skype.ui({
-                "name": "chat",
-                "element": "SkypeButton_Call_globalnet-alex_1",
-                "participants": ["globalnet-alex"],
-                "imageColor": "white",
-                "imageSize": 16
-              });
-            </script>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-        <a href="index.html"><img class="navbar-brand" src="image/GNE-logo.jpg" alt=""></a>
-      </div>
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li>
-            <a class="page-scroll" href="#section-OEM_about">庫存呆滯料管理部門簡介</a>
-          </li>
-          <li>
-            <a class="page-scroll" href="#section-procedure">收購庫存電子元件流程</a>
-          </li>
-          <li>
-            <a class="page-scroll" href="#section-news">最新消息</a>
-          </li>
-          <li>
-            <a class="page-scroll" href="#section-FAQ">常見問題</a>
-          </li>
-
-          <li>
-            <a href="#" class="dropdown-toggle" data-toggle="modal" data-target="#modal-contact">聯絡我們</a>
-          </li>
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container -->
+      </div> -->
   </nav>
 
   <!-- Header Carousel -->
@@ -502,16 +483,17 @@
       </div>
       <div class="col-md-6">
         <p>The Modern Business template by Start Bootstrap includes:</p>
-        <ul>
-          <li><strong>Bootstrap v3.3.7</strong>
-          </li>
-          <li>jQuery v1.11.1</li>
-          <li>Font Awesome v4.2.0</li>
-          <li>Working PHP contact form with validation</li>
-          <li>Unstyled page elements for easy customization</li>
-          <li>17 HTML pages</li>
-        </ul>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
+        <table class="table table-bordered">
+          <tr>
+            <th colspan="4">待售電子元件庫存清單</th>
+          </tr>
+          <tr>
+            <th>Part No.</th>
+            <th>Manufacture</th>
+            <th>Qty</th>
+            <th>Description</th>
+          </tr>
+        </table>
       </div>
       <div class="col-md-6">
         <img class="img-responsive" src="http://placehold.it/700x450" alt="">
@@ -519,12 +501,40 @@
     </div>
     <!-- /.row -->
 
+    <div class="row " id="section-form">
+      <div class="col-lg-12">
+        <h2 class="page-header">庫存發送表單</h2>
+      </div>
+      <div class="col-lg-12">
+        <form>
+          <div class="form-group">
+            <label for="contactPerson">聯絡人姓名</label>
+            <input type="text" class="form-control" id="contactPerson">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">電子郵件信箱</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="ex : contact@gne.com">
+          </div>
+          <div class="form-group">
+            <label for="phoneNumber">聯絡電話</label>
+            <input type="tel" class="form-control" id="phoneNumber" placeholder="ex : 0987654321">
+          </div>
+          <div class="form-group">
+            <div class="help-block"><span><i class="fa fa-phone" aria-hidden="true"></i></span>+886-2-2740-5300 ext : 300 Alex</div>
+            <div class="help-block"><span><i class="fa fa-envelope" aria-hidden="true"></i></span><a href="mailto:oes@gneic.com">oes@gneic.com</a></div>
+          </div>
+
+          <input type="file" name="" value="">
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div>
+    </div>
+    <!-- /.row -->
 
 
-
-    <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="返回頂部" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
-
-
+    <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="返回頂部" data-toggle="tooltip" data-placement="left">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
   </div>
   <!-- /.container -->
 
