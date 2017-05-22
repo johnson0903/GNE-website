@@ -32,21 +32,10 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">聯絡方式</h4>
+          <h4 class="modal-title">聯絡方式 : ”如有庫存需要轉售報價，請使用下列表單將庫存清單發送給我們，謝謝。”</h4>
         </div>
         <div class="modal-body">
-          <div class="contact-info">
-            <img class="contact-image" src="image/skype.png" alt="skype.png">
-            <h5>globalnet-alex</h5>
-          </div>
-          <div class="contact-info">
-            <img class="contact-image" src="image/wechat.png" alt="wechat.png">
-            <h5>alexbuystcok</h5>
-          </div>
-          <div class="contact-info">
-            <img class="contact-image" src="image/line.png" alt="line.png">
-            <h5>alex5300</h5>
-          </div>
+
         </div>
         <form>
           <div class="form-group">
@@ -55,15 +44,29 @@
           </div>
           <div class="form-group">
             <label for="exampleInputEmail1">電子郵件信箱</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="contact@gne.com">
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="ex : contact@gne.com">
           </div>
           <div class="form-group">
             <label for="phoneNumber">聯絡電話</label>
-            <input type="tel" class="form-control" id="phoneNumber" placeholder="0987654321">
+            <input type="tel" class="form-control" id="phoneNumber" placeholder="ex : 0987654321">
           </div>
           <div class="form-group">
-            <div class="help-block"><span><i class="fa fa-phone" aria-hidden="true"></i></span>+886-2-2740-5300</div>
-            <div class="help-block"><span><i class="fa fa-envelope" aria-hidden="true"></i></span><a href="mailto:oem@gneic.com">oem@gneic.com</a></div>
+            <div class="help-block"><span><i class="fa fa-phone" aria-hidden="true"></i></span>+886-2-2740-5300 ext : 300 Alex</div>
+            <div class="help-block"><span><i class="fa fa-envelope" aria-hidden="true"></i></span><a href="mailto:oes@gneic.com">oes@gneic.com</a></div>
+          </div>
+          <div class="form-group" id="contact-fom-group">
+            <div class="contact-info">
+              <img class="contact-image" src="image/skype.png" alt="skype.png">
+              <h5>globalnet-alex</h5>
+            </div>
+            <div class="contact-info">
+              <img class="contact-image" src="image/wechat.png" alt="wechat.png">
+              <h5>alexbuystcok</h5>
+            </div>
+            <div class="contact-info">
+              <img class="contact-image" src="image/line.png" alt="line.png">
+              <h5>alex5300</h5>
+            </div>
           </div>
           <input type="file" name="" value="">
           <button type="submit" class="btn btn-default">Submit</button>
@@ -99,16 +102,28 @@
         <div class="flex-row">
           <div class="flex-row">
             <i class="fa fa-phone fa-2x white-icon" aria-hidden="true"></i>
-            <h4>+886-2-2740-5300</h4>
+            <h4>+886-2-2740-5300 ext:300 Alex</h4>
           </div>
           <div class="flex-row">
             <i class="fa fa-envelope-o fa-2x white-icon" aria-hidden="true"></i>
-            <a href="mailto:oem@gneic.com"><h4>oem@gneic.com</h4></a>
+            <a href="mailto:oem@gneic.com"><h4>oes@gneic.com</h4></a>
           </div>
         </div>
-        <div class="contact-nav-right">
-          <a href="#" class="dropdown-toggle" data-toggle="modal" data-target="#modal-wechat"><i class="fa fa-weixin white-icon fa-2x" aria-hidden="true" title="johnson"></i></a>
-          <i class="fa fa-skype white-icon fa-2x" aria-hidden="true"></i>
+        <div class="contact-nav-right" id="contact-icon">
+          <a href="#" class="dropdown-toggle" data-toggle="modal" data-target="#modal-wechat"><i class="fa fa-weixin white-icon" aria-hidden="true" title="wechat"></i></a>
+          <!-- <i class="fa fa-skype white-icon fa-2x" aria-hidden="true"></i> -->
+          <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
+          <div id="SkypeButton_Call_globalnet-alex_1">
+            <script type="text/javascript">
+              Skype.ui({
+                "name": "chat",
+                "element": "SkypeButton_Call_globalnet-alex_1",
+                "participants": ["globalnet-alex"],
+                "imageColor": "white",
+                "imageSize": 16
+              });
+            </script>
+          </div>
         </div>
       </div>
     </div>
@@ -137,7 +152,7 @@
             <a class="page-scroll" href="#section-news">最新消息</a>
           </li>
           <li>
-            <a class="page-scroll" href="#section-FAQ">FAQ</a>
+            <a class="page-scroll" href="#section-FAQ">常見問題</a>
           </li>
 
           <li>
@@ -318,7 +333,7 @@
       <div class="col-md-3 col-sm-4">
         <figure>
           <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/500x450" alt="">
-          <figcaption>其他成品</figcaption>
+          <figcaption>其他成品與設備</figcaption>
         </figure>
       </div>
     </div>
@@ -360,7 +375,7 @@
     <!-- FAQ Section -->
     <div class="row " id="section-FAQ">
       <div class="col-lg-12">
-        <h2 class="page-header">FAQ</h2>
+        <h2 class="page-header">常見問題</h2>
       </div>
       <div class="col-lg-12 panel-group" id="accordion" role="tablist" aria-multiselectable="true">
         <div class="panel panel-default">

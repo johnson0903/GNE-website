@@ -90,6 +90,16 @@ figcaption {
   padding: 5px 8px;
 }
 
+#contact-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact-icon p{
+  margin: 0 !important;
+}
+
 /* navbar style */
 .navbar{
   margin-bottom: 0;
@@ -120,8 +130,13 @@ figcaption {
 .img-hover:hover {
   opacity: 0.8;
 }
-
+#contact-fom-group{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .contact-info{
+  width: 300px;
   display: flex;
   justify-content: space-around;
   align-items: center;
