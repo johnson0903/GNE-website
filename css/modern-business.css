@@ -116,6 +116,7 @@ figcaption {
 .flex-row{
   display: flex;
   align-items: center;
+  margin-right: 10px;
 }
 
 .contact-nav-right i{
