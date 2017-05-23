@@ -220,6 +220,9 @@ figcaption {
     width: 20%;
     float: left;
   }
+  .panel{
+    height: 180px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -227,12 +230,18 @@ figcaption {
     width: 20%;
     float: left;
   }
+  .panel{
+    height: 280px;
+  }
 }
 
 @media (min-width: 1200px) {
   .col-lg-5ths {
     width: 20%;
     float: left;
+  }
+  .panel{
+    height: 250px;
   }
 }
 @media (max-width: 500px) {

@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>OEM部門 | 盛通GNE</title>
+  <title>專業收購庫存電子零件｜盛通電子庫存電子滯料管理部</title>
 
   <!-- Bootstrap Core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -89,15 +89,6 @@
         </button>
       </div>
       <div class="navbar-right" id="contact-icon">
-        <div class="flex-row">
-          <i class="fa fa-phone fa-lg white-icon" aria-hidden="true"></i>
-          <h5>+886-2-2740-5300 ext：300 Alex</h5>
-        </div>
-        <div class="flex-row">
-          <i class="fa fa-envelope-o fa-lg white-icon" aria-hidden="true"></i>
-          <a href="mailto:oes@gneic.com"><h5>oes@gneic.com</h5></a>
-        </div>
-        <!-- <a href="#" class="dropdown-toggle" data-toggle="modal" data-target="#modal-wechat"><i class="fa fa-weixin fa-2x black-icon" aria-hidden="true"></i></a> -->
         <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
         <div id="SkypeButton_Call_globalnet-alex_1">
           <script type="text/javascript">
@@ -109,12 +100,25 @@
             });
           </script>
         </div>
+        <div class="flex-row">
+          <i class="fa fa-phone fa-lg white-icon" aria-hidden="true"></i>
+          <h5>+886-2-2740-5300</h5>
+        </div>
+        <div class="flex-row">
+          <i class="fa fa-envelope-o fa-lg white-icon" aria-hidden="true"></i>
+          <a href="mailto:oes@gneic.com"><h5>oes@gneic.com</h5></a>
+        </div>
+        <!-- <a href="#" class="dropdown-toggle" data-toggle="modal" data-target="#modal-wechat"><i class="fa fa-weixin fa-2x black-icon" aria-hidden="true"></i></a> -->
+
       </div>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
+        <li>
+          <a class="page-scroll" href="#section-form">*庫存收購報價</a>
+        </li>
         <li>
           <a class="page-scroll" href="#section-OEM_about">庫存呆滯料管理部門簡介</a>
         </li>
@@ -507,7 +511,8 @@
 
     <div class="row " id="section-form">
       <div class="col-lg-12">
-        <h2 class="page-header">庫存發送表單</h2>
+        <h2 class="page-header">庫存收購報價</h2>
+        <span id="helpBlock" class="help-block">你可以透過本表單發送庫存清單給盛通，盛通估價人員會在48小時提供報價。</span>
       </div>
       <div class="col-lg-12">
         <form>
@@ -523,13 +528,9 @@
             <label for="phoneNumber">聯絡電話</label>
             <input type="tel" class="form-control" id="phoneNumber" placeholder="ex : 0987654321">
           </div>
-          <div class="form-group">
-            <div class="help-block"><span><i class="fa fa-phone" aria-hidden="true"></i></span>+886-2-2740-5300 ext : 300 Alex</div>
-            <div class="help-block"><span><i class="fa fa-envelope" aria-hidden="true"></i></span><a href="mailto:oes@gneic.com">oes@gneic.com</a></div>
-          </div>
 
           <input type="file" name="" value="">
-          <button type="submit" class="btn btn-default">Submit</button>
+          <button type="submit" class="btn btn-default" onclick="clickSubmit()">Submit</button>
         </form>
       </div>
     </div>
@@ -563,6 +564,7 @@
 
   <script src="js/scrolling-nav.js"></script>
   <!-- Script to Activate the Carousel -->
+    <script src="js/submit.js"></script>
   <script>
     $('.carousel').carousel({
       interval: 2500 //changes the speed
