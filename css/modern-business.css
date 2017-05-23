@@ -220,7 +220,7 @@ figcaption {
     width: 20%;
     float: left;
   }
-  .panel{
+  .col-md-5ths .panel{
     height: 180px;
   }
 }
@@ -230,7 +230,7 @@ figcaption {
     width: 20%;
     float: left;
   }
-  .panel{
+  .col-md-5ths .panel{
     height: 280px;
   }
 }
@@ -240,7 +240,7 @@ figcaption {
     width: 20%;
     float: left;
   }
-  .panel{
+  .col-md-5ths .panel{
     height: 250px;
   }
 }
