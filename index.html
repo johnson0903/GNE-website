@@ -18,6 +18,7 @@
   <!-- Scrolling CSS -->
   <link href="css/scrolling-nav.css" rel="stylesheet">
 
+
   <!-- Custom Fonts -->
   <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
@@ -25,6 +26,8 @@
 </head>
 
 <body data-target=".navbar" data-spy="scroll" data-offset="105">
+
+
   <!-- 聯絡我們-Modal -->
   <div class="modal fade" id="modal-contact" role="dialog">
     <div class="modal-dialog">
@@ -35,7 +38,8 @@
           <h4 class="modal-title">您可以用以下的方式聯絡我們</h4>
         </div>
         <div class="modal-body">
-          <div class="form-group" id="contact-fom-group">
+
+          <div class="form-group" id="contact-form-group">
             <div class="contact-info">
               <img class="contact-image" src="image/skype.png" alt="skype.png">
               <h5>globalnet-alex</h5>
@@ -89,7 +93,7 @@
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <a href="index.html"><img class="navbar-brand" src="image/GNE-logo2.jpg" alt="GNE-logo2.jpg"></a>
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <button type="button" id="hamburger-btn" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -142,6 +146,9 @@
         </li>
         <li>
           <a class="page-scroll" href="#section-form">*庫存收購報價</a>
+        </li>
+        <li>
+          <a class="page-scroll" href="#section-join_us" >加入銷售夥伴</a>
         </li>
         <li>
           <a href="#" class="dropdown-toggle" data-toggle="modal" data-target="#modal-contact">聯絡我們</a>
@@ -368,6 +375,38 @@
       <div class="col-lg-12">
         <h2 class="page-header">最新消息</h2>
       </div>
+      <div class="col-md-12">
+        <div class="table-responsive">
+          <table class="table table-condensed">
+            <thead>
+              <tr>
+                <th>日期</th>
+                <th>標題</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2017-05-15</td>
+                <td><a href="http://www.gneic.com/OES_EVENT_201704.php">點石成金---盛通呆滯物料收購服務</a></td>
+              </tr>
+              <tr>
+                <td>2016-06-23</td>
+                <td><a href="http://buyic.blogspot.tw/2016/06/blog-post_23.html">收購庫存電子零件_如何交易?</a></td>
+              </tr>
+              <tr>
+                <td>2016-06-20</td>
+                <td><a href="http://buyic.blogspot.tw/2016/06/blog-post.html">盤點後，請將庫存呆滯料交給盛通電子處理</a></td>
+              </tr>
+              <tr>
+                <td>2016-06-20</td>
+                <td><a href="http://buyic.blogspot.tw/2016/06/48.html">庫存電子零件是先轉售還是先盤點?</a></td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+
     </div>
     <!-- /.row -->
 
@@ -546,22 +585,22 @@
         <span id="helpBlock" class="help-block">你可以透過本表單發送庫存清單給盛通，盛通估價人員會在48小時提供報價。</span>
       </div>
       <div class="col-lg-12">
-        <form>
+        <form id="contentForm">
           <div class="form-group">
             <label for="contactPerson">聯絡人姓名</label>
-            <input type="text" class="form-control" id="contactPerson" placeholder="您的姓名">
+            <input name="cname" type="text" class="form-control" id="contactPerson" placeholder="您的姓名">
           </div>
           <div class="form-group">
             <label for="exampleInputEmail1">電子郵件信箱</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="ex : yourmail@gneic.com">
+            <input name="cemail" type="email" class="form-control" id="exampleInputEmail1" placeholder="ex : youremail@gneic.com">
           </div>
           <div class="form-group">
             <label for="phoneNumber">聯絡電話</label>
-            <input type="tel" class="form-control" id="phoneNumber" placeholder="ex : 0987654321">
+            <input name="cphone" type="tel" class="form-control" id="phoneNumber" placeholder="ex : 0987654321">
           </div>
           <div class="form-group">
             <label for="phoneNumber">訊息</label>
-            <textarea class="form-control" rows="6" placeholder="為加速庫存報價，請提供以下資訊:
+            <textarea name="cmsg" class="form-control" id="cmsg" rows="6" placeholder="為加速庫存報價，請提供以下資訊:
 1.交貨地點:台灣/香港/中國/韓國/日本/其他
 2.處理方式:整批或清單寄售
 3.Date Code:大約年份即可
@@ -569,7 +608,36 @@
           </div>
 
           <input type="file" name="" value="">
-          <button type="submit" class="btn btn-default" onclick="clickSubmit()">Submit</button>
+          <button type="submit" class="btn btn-default" onclick="sendMAIL()">Submit</button>
+        </form>
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <div class="row " id="section-join_us">
+      <div class="col-lg-12">
+        <h2 class="page-header">加入銷售夥伴</h2>
+        <span id="helpBlock" class="help-block">你可以透過本表單發送庫存清單給盛通，盛通估價人員會在48小時提供報價。</span>
+      </div>
+      <div class="col-lg-12">
+        <form id="contentForm">
+          <div class="form-group">
+            <label for="contactPerson">聯絡人姓名</label>
+            <input name="cname" type="text" class="form-control" id="contactPerson" placeholder="您的姓名">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">電子郵件信箱</label>
+            <input name="cemail" type="email" class="form-control" id="exampleInputEmail1" placeholder="ex : youremail@gneic.com">
+          </div>
+          <div class="form-group">
+            <label for="phoneNumber">聯絡電話</label>
+            <input name="cphone" type="tel" class="form-control" id="phoneNumber" placeholder="ex : 0987654321">
+          </div>
+          <div class="form-group">
+            <label for="phoneNumber">訊息</label>
+            <textarea name="cmsg" class="form-control" id="cmsg" rows="3" placeholder="請讓我們知道，您擅長處理整批統貨或指定品牌庫存"></textarea>
+          </div>
+          <button type="submit" class="btn btn-default" onclick="sendMAIL()">Submit</button>
         </form>
       </div>
     </div>
@@ -600,10 +668,8 @@
   <!-- Bootstrap Core JavaScript -->
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery.easing.min.js"></script>
-
   <script src="js/scrolling-nav.js"></script>
   <!-- Script to Activate the Carousel -->
-    <script src="js/submit.js"></script>
   <script>
     $('.carousel').carousel({
       interval: 2500 //changes the speed
@@ -626,7 +692,54 @@
       });
 
       $('#back-to-top').tooltip('show');
-    })
+    });
+
+    function sendMAIL() {
+      var name = $("input#contactPerson").val();
+      alert(name);
+      var phone = $("input#phoneNumber").val();
+      var email = $("input#exampleInputEmail1").val();
+      var message = $("textarea#cmsg").val();
+      var firstName = name; // For Success/Failure Message
+      $.ajax({
+        url: "contact_me.php",
+        type: "POST",
+        data: {
+          name: name,
+          phone: phone,
+          email: email,
+          message: message
+        },
+        cache: false,
+        success: function() {
+          // Success message
+          $('#success').html("<div class='alert alert-success'>");
+          $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+            .append("</button>");
+          $('#success > .alert-success')
+            .append("<strong>Your message has been sent. </strong>");
+          $('#success > .alert-success')
+            .append('</div>');
+
+          //clear all fields
+          $('#contactForm').trigger("reset");
+          alert("Clear!");
+        },
+        error: function() {
+
+          // Fail message
+          alert("fail!");
+          $('#success').html("<div class='alert alert-danger'>");
+          $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+            .append("</button>");
+          $('#success > .alert-danger').append("<strong>Sorry " + firstName +
+            " it seems that my mail server is not responding...</strong> Could you please email me directly to <a href='mailto:me@example.com?Subject=Message_Me from myprogrammingblog.com;>me@example.com</a> ? Sorry for the inconvenience!");
+          $('#success > .alert-danger').append('</div>');
+          //clear all fields
+          $('#contactForm').trigger("reset");
+        },
+      });
+    }
   </script>
 
 
