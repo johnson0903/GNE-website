@@ -151,13 +151,14 @@ figcaption {
   color: white !important;
 }
 .navbar-nav .active{
-  background-color: rgb(59, 59, 59);
+
 }
-.navbar-nav li:hover{
+
+/*.navbar-nav li:hover{
   background-color:rgb(125, 125, 125);
-}
+}*/
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-  background-color: rgba(185, 207, 198, 0.3);
+  background-color: rgb(79, 79, 79);
 }
 .navbar-brand {
   padding: 5px 5px;
