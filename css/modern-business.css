@@ -14,8 +14,9 @@ a {
   text-decoration: none !important;
   color: rgb(77, 77, 77);
 }
+
 a:visited{
-  color: rgb(255, 155, 73);
+  color: #F79B00;
 }
 
 i {
@@ -204,7 +205,7 @@ figcaption {
   color: white !important;
 }
 .navbar-nav>li>a:hover{
-  color: rgb(85, 85, 85) !important;
+  color: rgb(0, 0, 0) !important;
 }
 .navbar-nav .active {}
 
@@ -214,7 +215,7 @@ figcaption {
 }*/
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-  background-color: rgb(79, 79, 79);
+  background-color: #555;
 }
 
 .navbar-brand {
