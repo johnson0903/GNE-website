@@ -12,6 +12,10 @@ h1, h2 {
 
 a {
   text-decoration: none !important;
+  color: rgb(77, 77, 77);
+}
+a:visited{
+  color: rgb(255, 155, 73);
 }
 
 i {
